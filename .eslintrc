@@ -1,0 +1,7 @@
+{
+  "extends": "./config/eslintconfig.js",
+  "rules":{
+    "linebreak-style": 0
+  }
+}
+
