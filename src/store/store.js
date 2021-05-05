@@ -6,7 +6,7 @@ import reducerCar from './carState/reducer';
 import reducerCategories from './categoriesState/reducer';
 
 
-combineReducers({ reducerCar, reducerCategories });
+const reducer = combineReducers({ reducerCar, reducerCategories });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(combineReducers, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
