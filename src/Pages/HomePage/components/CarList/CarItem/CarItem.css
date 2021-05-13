@@ -1,0 +1,15 @@
+.CarItem{
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: rgb(241, 202, 153);
+  border: 1px solid rgb(139, 133, 133);
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0 5px 3px 1px #ccc;
+}
+.CarItem>h3,h4{
+  color: white;
+}

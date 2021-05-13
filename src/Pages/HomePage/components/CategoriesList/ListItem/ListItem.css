@@ -1,0 +1,15 @@
+.ListItem{
+  color: rgb(52, 154, 185);
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 15px 0;
+  transition: 0.2s;
+}
+.ListItem:hover{
+  color: rgba(0, 153, 255, 0.904);
+  cursor: pointer;
+}
+.ListItem:active{
+  color:rgba(2, 88, 145, 0.904)
+}

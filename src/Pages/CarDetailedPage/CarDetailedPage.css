@@ -1,0 +1,7 @@
+.CarDetailedPage{
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid silver;
+}

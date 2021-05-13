@@ -3,25 +3,26 @@ import * as Actions from '../types';
 const initialState = {
   loading: false,
   error: false,
-  data: []
+  data: [],
+  currentCategory: {}
 };
 
-const reducer = (state = initialState, action) => {
+const reducerCategories = (state = initialState, action) => {
   switch (action.type) {
   case Actions.requestCategories: {
-    return {};
+    return { ...state, loading: true };
   }
 
   case Actions.getCategories: {
-    return {};
+    return { ...state, loading: false, data: action.payload };
   }
 
   case Actions.getCategoriesError: {
-    return {};
+    return { ...state, loading: false, error: action.payload };
   }
 
   default: return state;
   }
 };
 
-export default reducer;
+export default reducerCategories;
