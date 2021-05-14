@@ -83,7 +83,6 @@ class CarShopService {
     { id: 60, name: 'Toyota', year: 2009, EC: 1.8, model: 'corolla', fuel: 'petrol', description: this.#text }
   ];
 
-
   getListCategories = async() => this.#categories;
   getCarList = async() => this.#cars;
   getCarCategory = async category => this.#cars.filter(item => item.name === category);

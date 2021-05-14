@@ -35,7 +35,6 @@ class DetailedInfo extends Component {
   }
 }
 
-
 const mapDispatchToProps = dispatch => ({
   getCar: id => dispatch(getDataCar(carShop, id)())
 });

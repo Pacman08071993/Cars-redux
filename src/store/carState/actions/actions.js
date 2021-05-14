@@ -31,8 +31,6 @@ export const getDataCategory = (carShop, name) => () => dispatch => {
 
 export const getDataCar = (carShop, carId) => () => dispatch => {
   dispatch(requestCar);
-  // eslint-disable-next-line no-console
-  console.log(1111, carId);
   carShop.getCar(carId)
     .then(r => dispatch(getCar(r)))
     .catch(e => dispatch(getCarError(e)));
